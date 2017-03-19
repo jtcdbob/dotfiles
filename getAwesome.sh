@@ -1,7 +1,7 @@
 #### Variables
 
 home=~
-dotfilePath=.
+dotfilePath=$HOME/dotfiles/
 # subdirs="zsh bash git tmux vim"
 
 #### Create symlinks

@@ -99,8 +99,8 @@ set noerrorbells " Disable error bells.
 " Automatically save and load folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview"
-" set nobackup
-" set noswapfile
+set nobackup
+set noswapfile
 
 """"""" Key remapping """"""""
 nnoremap <CR> G

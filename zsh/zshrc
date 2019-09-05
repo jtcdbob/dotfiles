@@ -136,6 +136,7 @@ alias gd1='git diff HEAD~1'
 alias gr='git reset'
 alias grh='git reset --hard'
 alias grhm='git reset --hard origin/master'
+alias gca='git commit --amend'
 
 ## AWS
 alias as='aws s3'

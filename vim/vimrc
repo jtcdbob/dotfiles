@@ -16,6 +16,10 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'mitsuhiko/vim-python-combined'
 Plugin 'tpope/vim-fugitive'
+Plugin 'luochen1990/rainbow'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Yggdroot/indentLine'
+Plugin 'junegunn/fzf'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -114,8 +118,8 @@ nnoremap gV `[V`]
 inoremap jk <esc>
 
 " Map Leader
-" let mapleader = "\<Space>"
-" nnoremap <Leader>w :w<CR>
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
 " nnoremap <Leader><space> za
 " nmap <leader>cd :cd %:h<CR>
 " nmap <leader>lcd :lcd %:h<CR>
@@ -161,3 +165,14 @@ let NERDTreeIgnore = ['\.pyc$']
 
 """"""" CtrlP """"""""
 let g:ctrlp_cmd='CtrlP :pwd'
+
+""""""" Rainbow """"""""
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+""""""" Indent Line """"""""
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+""""""" Fzf """"""""
+nnoremap <silent> <leader>f :FZF<cr>
+nnoremap <silent> <leader>F :FZF ~<cr>
+

@@ -20,6 +20,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Yggdroot/indentLine'
 Plugin 'junegunn/fzf'
+Plugin 'easymotion/vim-easymotion'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -101,6 +102,7 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview"
 set nobackup
 set noswapfile
+set autoread
 
 """"""" Key remapping """"""""
 nnoremap <CR> G
@@ -173,6 +175,14 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 """"""" Fzf """"""""
-nnoremap <silent> <leader>f :FZF<cr>
-nnoremap <silent> <leader>F :FZF ~<cr>
+nnoremap <silent> <leader>t :FZF<cr>
+nnoremap <silent> <leader>T :FZF ~<cr>
 
+""""""" EasyMotion """"""""
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>f <Plug>(easymotion-bd-w)
+nmap <Leader>f <Plug>(easymotion-overwin-w)

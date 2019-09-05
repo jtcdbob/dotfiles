@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/Bob/Dropbox/Sync Folder/Programming/Python/python/plot_tutorial'
-let g:netrw_dirhist_2='/Users/Bob/Dropbox/Sync Folder/Programming/myGit/Homework/.hg'
-let g:netrw_dirhist_3='/Applications/Borderlands2.app/Contents/GameData/Engine/Localization'
-let g:netrw_dirhist_4='/Users/Bob/Dropbox/homework/Homework Fall 2015/CS5220/demo_folder/threaded_mc'
-let g:netrw_dirhist_5='/Users/Bob/Dropbox/homework/Homework Fall 2015/CS5220/demo_folder'
-let g:netrw_dirhist_6='/opt/intel/compilers_and_libraries_2016/mac/tbb'

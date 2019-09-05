@@ -1,0 +1,38 @@
+# Exports
+CASE_SENSITIVE="true"
+DISABLE_AUTO_UPDATE="true"
+ENABLE_CORRECTION="true"
+
+# Aliases
+## Basic
+alias la='ls -al --color=always'
+alias ll='ls -a --color=always'
+alias ls='ls -sF --color=always'
+alias l='ls -sF --color=always'
+
+alias h='history'
+alias hg='history | grep -i'
+
+alias tmux='TERM=screen-256color-bce tmux'
+alias ta='tmux attach'
+alias vi='vim'
+
+## BASH
+alias reload=". ~/.bash_profile && echo 'BASH_PROFILE config reloaded from ~/.bash_profile'"
+alias vzsh='vi ~/.bash_local'
+alias vvim='vi ~/.vimrc'
+
+## Git
+alias gst='git status'
+alias gl='git pull'
+alias gd1='git diff HEAD~1'
+alias gr='git reset'
+alias grh='git reset --hard'
+alias grhm='git reset --hard origin/master'
+
+## AWS
+alias as='aws s3'
+alias asls='aws s3 ls'
+alias ascp='aws s3 cp'
+
+source ~/.bash_local

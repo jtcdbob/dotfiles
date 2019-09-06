@@ -2,6 +2,9 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="muse"
+# ZSH_THEME="dieter"
+# ZSH_THEME="gentoo"
+# ZSH_THEME="wezm"
 CASE_SENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 ENABLE_CORRECTION="true"
@@ -133,10 +136,13 @@ alias vvim='vi ~/.vimrc'
 
 ## Git
 alias gd1='git diff HEAD~1'
+alias gdd='git diff HEAD~1'
 alias gr='git reset'
 alias grh='git reset --hard'
 alias grhm='git reset --hard origin/master'
 alias gca='git commit --amend'
+
+alias gg='gitit'
 
 ## AWS
 alias as='aws s3'

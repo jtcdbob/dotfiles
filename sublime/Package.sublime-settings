@@ -6,7 +6,9 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"Alignment",
 		"All Autocomplete",
+		"AutoPEP8",
 		"BracketHighlighter",
 		"Git",
 		"GitGutter",

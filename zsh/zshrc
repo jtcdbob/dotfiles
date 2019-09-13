@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 ## Basic
 alias ll='ls -a'
+alias lf='ls -a | fzf'
 alias -g G='| grep -i' # G as shortcut for pipe and grep
 
 alias h='history'
@@ -122,6 +123,7 @@ alias tmux='TERM=screen-256color-bce tmux'
 alias ta='tmux attach'
 alias vi='vim'
 
+alias vf='vi $(ls | fzf)'
 ## Associate file extension with certain commands
 alias -s {txt,json,yml,yaml}=vim
 alias -s gz='tar -xzvf'
